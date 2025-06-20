@@ -1,0 +1,25 @@
+h2 {
+  font-size: 25px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
+  font-family: 'Noto Serif';
+  font-weight: 700;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 25px;
+/*  line-height: 3;*/
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 16px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
+  font-family: 'Noto Sans';
+  margin-bottom: 10px;
+  margin-left: 18px;
+  margin-right: 18px;
+  text-indent: 30px;
+}
+
+span.italic {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  letter-spacing: 0.6px;
+}
