@@ -61,3 +61,5 @@ span.bold {
 /*  padding: 1em;*/
 }
 
+.leaflet-attribution-flag { display: none !important; }
+
