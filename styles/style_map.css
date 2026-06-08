@@ -117,3 +117,13 @@ span.bold {
 .list{  font-size: 12px;
   font-family: 'Noto Sans';
 }
+
+.legend-circle {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%; /* Превращает квадрат в идеальный круг */
+    border: 1px solid #000; /* Чёрная обводка, как у точек на карте */
+    margin-right: 5px;
+    vertical-align: middle;
+}
