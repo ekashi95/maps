@@ -81,6 +81,12 @@
             font-size: 13px;
             cursor: pointer;
         }
+        #float_image {
+            position: absolute;
+            bottom: 2%;
+            left: 2%;
+              width: 280px;
+        }
     </style>
 </head>
 
@@ -98,7 +104,14 @@
         </p>
     </header>
 
-    <div id="map"></div>
+    <div id="map">
+        <img id="float_image"
+                 src="https://ekashi95.github.io/maps/images/logos.svg"
+                 style="z-index: 999999">
+        </img> 
+    </div>
+
+
 
     <script>
         // 1. Инициализация базовой карты
