@@ -1,0 +1,18 @@
+{
+    "BTV-1": "#ffff99",
+    "BTV-2": "#b15928",
+    "BTV-3": "#e31a1c",
+    "BTV-4": "#1f78b4",
+    "BTV-5": "#440E03",
+    "BTV-8": "#ff7f00",
+    "BTV-10": "#fdbf6f",
+    "BTV-12": "#33a02c",
+    "BTV-16": "#a6cee3",
+    "BTV-19": "#b2df8a",
+    "BTV-22": "#fb9a99",
+    "BTV-2/BTV-10": "#F54927",
+    "BTV-4/BTV-8": "#6a3d9a",
+    "BTV-4/BTV-16": "#cab2d6",
+    "Unspecified": "#bdbdbd",
+    "Default": "#ffffff"
+}
