@@ -132,13 +132,25 @@
 
         // 2. Функция, которая запускает построение карты после получения данных
         function initMapLogic() {
-            // Генерация цветов для серотипов
-            const uniqueSerotypes = [...new Set(outbreaksData.map(d => d.SubType))].sort();
+            // Получаем ВСЕ серотипы из данных, чтобы знать, какие из них реально существуют
+            const existingSerotypes = new Set(outbreaksData.map(d => d.SubType));
 
-            // включаем по умолчанию
-            uniqueSerotypes.forEach(serotype => {
-                activeSerotypes.add(serotype); // Включаем по умолчанию
+            // Берем ключи из словаря цветов (сохраняя порядок файла) 
+            // и оставляем только те, которые есть в данных (кроме ключа "Дефолтный")
+            const uniqueSerotypes = Object.keys(serotypeColors).filter(serotype => 
+                serotype !== "Default" && existingSerotypes.has(serotype)
+            );
+
+            // Если в данных вдруг нашелся серотип, которого НЕТ в словаре цветов,
+            // добавим его в самый конец списка панели управления
+            existingSerotypes.forEach(serotype => {
+                if (!uniqueSerotypes.includes(serotype)) {
+                    uniqueSerotypes.push(serotype);
+                }
             });
+
+            // Активируем все найденные серотипы по умолчанию
+            uniqueSerotypes.forEach(serotype => activeSerotypes.add(serotype));
             
             // Получаем уникальные года
             const uniqueYears = [...new Set(outbreaksData.map(d => d.Year))].sort();
