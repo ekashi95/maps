@@ -107,6 +107,7 @@
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap contributors'
         }).addTo(map);
+        map.attributionControl.setPrefix('');
 
         // Глобальные переменные, которые заполнятся после загрузки JSON
         let outbreaksData = [];
@@ -133,7 +134,7 @@
             // Отрисовка маркеров
             renderMarkers();
 
-            // Создание панели "Фильтр по годам"
+            // Создание панели "Годы"
             const yearControl = L.control({ position: 'topright' });
             yearControl.onAdd = function () {
                 const div = L.DomUtil.create('div', 'filter-panel');
@@ -152,7 +153,7 @@
             };
             yearControl.addTo(map);
 
-            // Создание панели "Фильтр по серотипам"
+            // Создание панели "Серотипы"
             const serotypeControl = L.control({ position: 'topleft' });
 
             serotypeControl.onAdd = function () {
