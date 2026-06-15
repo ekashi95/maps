@@ -6,7 +6,9 @@
 
 ---
 
-<img src="https://ekashi95.github.io/maps/images/logos.svg" align="left" height="70px" />
+<p align="left">
+  <img src="https://github.com/ekashi95/maps/blob/main/images/logos.svg" height="70" alt="Logos" />
+</p>
 
 Карты подготовлены сотрудниками лаборатории эпизоотологии и биоинформатики [ФГБНУ ФИЦВиМ](https://ficvim.ru/).
 
